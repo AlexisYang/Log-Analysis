@@ -1,10 +1,15 @@
+#!/usr/bin/env python
 import psycopg2
 from time import strftime
 
 
 def connect(db_name):
     """Connect to the PostgreSQL database.  Returns a database connection."""
-    return psycopg2.connect("dbname=%s" % db_name)
+    try:
+        db = psycopg2.connect("dbname=%s" % db_name)
+        return db
+    except psycopg2.Error as e:
+        print ("Unable to connect to the database")
 
 
 def request_db(db_name, fetch, *args):
