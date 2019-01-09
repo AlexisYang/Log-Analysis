@@ -1,3 +1,14 @@
+# Logs Analysis - Udacity
+### Full Stack Web Development NanoDegree
+_______________________
+## About
+This project is a log analysis tool that analyzes a web accessing log database and obtains some useful statistics.
+## Prerequisites
+* Python 2.7.5 [https://www.python.org/downloads/]
+* Vagrant [https://www.vagrantup.com/downloads.html]
+* VirtualBox [https://www.virtualbox.org/wiki/Downloads]
+* PostgreSQL [https://www.postgresql.org/download/]
+
 # Log-Analysis
 How to test: 
 1. Run log_analysis.py directly and it would print out the answers to the 3 questions one by one.
