@@ -33,6 +33,7 @@ vagrant ssh
 ```
 3. Download the database from previous section and load it.
 ```
+createdb news
 psql -d news -f newsdata.sql
 ```
 4. Clone this repo, run the code, and the results would be printed.
